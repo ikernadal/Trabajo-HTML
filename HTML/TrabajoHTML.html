@@ -1,0 +1,509 @@
+<!doctype HTML>
+    <html lang=“es”>
+        <head>
+
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tutorial HTML5</title>
+            <link rel="stylesheet" type="text/css" href="EstiloHTML.css">
+
+        </head>
+
+        <body>
+            
+            <h1>Tutorial de HTML5</h1>
+    
+            <section id="indice" class="indice">
+
+                <h2>Indice</h2>
+
+                <ol>
+
+                <a href="#formato" class="apartadosIndice">Formato</a>
+                <a href="#titulo" class="apartadosIndice">Titulo</a>
+                <a href="#metadatos" class="apartadosIndice">Metadatos</a>
+                <a href="#tituloTexto" class="apartadosIndice">Titulos de texto</a>
+                <a href="#seccionArticulo" class="apartadosIndice">Sección y artículo</a>
+                <a href="#documento" class="apartadosIndice">Cabecera y pie de página</a>
+                <a href="#agrupacion" class="apartadosIndice">Agrupaciones</a>
+                <a href="#elementosSemanticos" class="apartadosIndice">Elementos semánticos del texto</a>
+                <a href="#simbolosEspeciales" class="apartadosIndice">Símbolos especiales</a>
+                <a href="#tablas" class="apartadosIndice">Tablas</a>
+
+                </ol>
+                
+            </section>
+
+            <section id="indiceExterno" class="indiceExterno">
+
+                
+
+            </section>
+
+            <section id="indiceMultimedia" class="indiceMultimedia">
+
+                <h2>Indice Multimedia</h2>
+
+                <ol>
+
+                    <a href="HTML/Multimedia.html" class="apartadosIndice">Apartado Multimedia</a>
+
+                </ol>
+
+            </section>
+
+            <section id="formato" class="formato">
+
+                <h2 class="h2">Formato</h2>
+
+                <article id="tipoDocumento" class="h3">
+
+                    <h3>Tipo de documento</h3>
+                    <p>
+
+                        Si queremos iniciar un documento html debemos de escribir la etiqueta:
+                        <b>&lt;!doctype html&gt;</b> con su correspondiente cierre: <b>&lt;/html&gt;</b>
+
+                    </p>
+
+                </article>
+
+                <article id="formatoEtiqueta" class="h3"><br>
+
+                    <h3>Formato de etiqueta</h3>
+                    <p>
+
+                        Etiqueta de apertura: &lt;nombre de la etiqueta&gt;
+
+                    </p>
+                    <p>
+
+                        Etiqueta de cierre: &lt;/nombre de la etiqueta&gt; <br>
+                        Si el elemento tiene atributos, estos no se incluirán en la etiqueta de cierre. 
+
+                    </p>
+
+                </article>
+
+                <article id="etiquetaCierre" class="h3"><br>
+
+                    <h3>Etiqueta de cierre vs Elemento vacío </h3>
+                    <p>
+
+                        La etiqueta de cierre (<b>&lt;/nombre de la etiqueta&gt;</b>) se usa para cerrar una etiqueta 
+                        que va a contener texto dentro de ella. <br> <br>
+                        Antes debemos de haber creado una etiqueta con ese nombre (<b>&lt;nombre de la etiqueta&gt;</b>), ya que si no sería errónea. 
+                        
+
+                    </p>
+                    <p>
+                        <br> 
+                        El elemento vacío (<b>&lt;nombre de la etiqueta/&gt;</b>) se usa para generar un elemento que 
+                        solo va a tener atributos.
+
+                    </p>
+
+                </article>
+
+                <article id="atributo" class="h3"><br>
+
+                    <h3>Atributos</h3>
+                    <p>
+
+                        Los atributos se representan como: <b>&lt;etiqueta atributo="valor del atributo"&gt;</b>
+
+                    </p>
+
+                </article>
+
+                <article id="formatoGeneral" class="h3"><br>
+
+                    <h3>Formato General</h3>
+                    <pre>
+
+    <b>&lt;!doctype html&gt;</b> 
+    <b>&lt;html lang="es"&gt;</b>
+    &Tab; <b>&lt;head&gt;</b>
+    &Tab; <b>&lt;/head&gt;</b>
+    &Tab; <b>&lt;body&gt;</b>
+    &Tab; <b>&lt;/body&gt;</b>
+    <b>&lt;/html&gt;</b> 
+
+                    </pre>
+
+                </article>
+
+            </section>
+
+            <section id="titulo" class="titulo"><br>
+
+                <h2 class="h2">Título</h2>
+
+                <p>
+
+                    La etiqueta de título se escribiría así: <br>
+                    &lt;title&gt;, cerrándola asi: &lt;/title&gt;
+
+                </p>
+
+                <pre>
+
+    <b>&lt;!doctype html&gt;</b> 
+    <b>&lt;html lang="es"&gt;</b>
+        <b>&lt;head&gt;</b>
+            &lt;title&gt;Título del documento HTML&lt;/title&gt;
+        <b>&lt;/head&gt;</b>
+        <b>&lt;body&gt;</b>
+            Este es el texto del documento. 
+        <b>&lt;/body&gt;</b>
+    <b>&lt;/html&gt;</b>
+
+                </pre>
+
+            </section>
+
+            <section id="metadatos" class="metadatos">
+
+                <h2 class="h2">Metadatos</h2>
+
+                <p>
+
+                    Los metadatos se escriben asi: <br>
+                    &lt;meta charset=“utf-8”&gt; <br>
+                    &lt;meta name=“author” content=“Iker”&gt;
+
+                </p>
+
+                <pre>
+
+    <b>&lt;!doctype html&gt;</b> 
+    <b>&lt;html lang="es"&gt;</b>
+        <b>&lt;head&gt;</b>
+            &lt;meta charset=“utf-8”&gt;
+            &lt;meta name=“author” content=“Iker”&gt;
+            &lt;title&gt;Título del documento HTML&lt;/title&gt;
+        <b>&lt;/head&gt;</b>
+        <b>&lt;body&gt;</b>
+            Este es el texto del documento. 
+        <b>&lt;/body&gt;</b>
+    <b>&lt;/html&gt;</b>
+                
+                </pre>
+
+            </section>
+
+            <section id="tituloTexto" class="tituloTexto">
+
+                <h2 class="h2">Títulos de Texto</h2>
+
+                <p>
+
+                    Para añadir un título de texto, hay que poner: <br> <br>
+                    &lt;h1&gt;Este es un título de primer nivel&lt;/h1&gt;<br>
+                    &lt;h2&gt;Este es un título de segundo nivel&lt;/h2&gt;<br>
+                    &lt;h3&gt;Este es un título de tercer nivel&lt;/h3&gt;<br>
+                    &lt;h4&gt;Este es un título de cuarto nivel&lt;/h4&gt;<br>
+                    &lt;h5&gt;Este es un título de quinto nivel&lt;/h5&gt;<br>
+                    &lt;h6&gt;Este es un título de sexto nivel&lt;/h6&gt;
+
+                </p>
+
+            </section>
+
+            <section id="seccionArticulo" class="seccionArticulo">
+
+                <h2 class="h2">Secciones vs Artículos</h2>
+                <p>
+
+                    Al usar &lt;section&gt;, vamos a crear un contenedor en el que 
+                    se van a agrupar contenidos comunes
+
+                </p>
+
+                <p>
+
+                    Al usar &lt;article&gt;, vamos a crear un contenedor en el que
+                    se van a agrupar contenidos algo más específicos
+
+                </p>
+
+                <p>
+
+                    Al margen de esto, en la práctica su uso es el mismo, solo cambia su significado. 
+
+                </p>
+
+            </section>
+
+            <section id="documento" class="documento">
+
+                <h2>Documento</h2>
+
+                <article id="encabezados">
+
+                    <h3>Encabezados</h3>
+                    <p>
+
+                        Los encabezados de una pagina son solamente de significado, por lo que aparecerá donde lo pongas. <br>
+                        &lt;header&gt;Encabezado&lt;/header&gt;
+
+                    </p>
+
+                </article>
+
+                <article id="nav">
+
+                    <h3>Nav</h3>
+                    <p>
+
+                        Los nav, sirven para crear una lista de búsqueda. <br>
+                        Con nav y lista pasaria lo mismo que con section y article, que solo cambia su significado pero no su uso. <br>
+                        &lt;nav&gt;Menú&lt;/nav&gt;
+
+                    </p>
+
+                </article>
+
+                <article id="aside">
+
+                    <h3>Aside</h3>
+                    <p>
+
+                        Los aside, sirven para indicar que esa parte está pensada para que vaya en un lado del documento. <br>
+                        &lt;aside&gt;Este texto iría en un lado&lt;/aside&gt;
+
+                    </p>
+
+                </article>
+
+                <article id="footer">
+
+                    <h3>Footer</h3>
+                    <p>
+
+                        Los footer son el pie de página, y le pasa como al encabezado, que aparecerá donde se ponga. <br>
+                        &lt;footer&gt;Esto es un pie de página&lt;/footer&gt;
+
+                    </p>
+
+                </article>
+
+                <article id="address">
+
+                    <h3>Address</h3>
+                    <p>
+
+                        Los address sirven para marcar que en esa parte va a haber información del autor. 
+                        &lt;address&gt;Aquí iria información del autor&lt;/address&gt;
+
+                    </p>
+
+                </article>
+
+            </section>
+
+            <section id="agrupacion" class="agrupacion">
+
+                <h2>Agrupación</h2>
+                <article id="parrafo">
+
+                    <h3>Párrafos</h3>
+                    <p>
+
+                        Los párrafos se usan para introducir texto genérico, es decir, sin especificar el tipo. <br>
+                        Se pueden introducir los párrafos que hagan falta en un mismo sitio.   
+                        &lt;p&gt; Esto sería un párrafo&lt;/p&gt;
+
+                    </p>
+
+                </article>
+
+                <article id="textoPreformateado">
+
+                    <h3>Texto preformateado</h3>
+                    <p>
+
+                        Los textos preformateados sirven para que el texto introducido se visualice exactamente igual. 
+                        &lt;pre&gt;Esto sería un texto preformateado &lt;pre&gt;
+
+                    </p>
+
+                </article>
+
+                <article id="listas">
+
+                    <h3>Listas</h3>
+                    <p>
+
+                        Las listas sirven para agrupar los contenidos de una parte. <br>
+                        Las listas &lt;ul&gt; no las numeran si no que ponen puntos a la izquierda (Ctrl + shift + 8) <br>
+                        Las listas &lt;ol&gt; numeran cada fila, poniendo el número correspondiente a la izquierda. <br>
+                        Los &lt;dt&gt; o dt sirven para definir un nombre en una lista. <br>
+                        Los &lt;dd&gt; o dd sirven para desarrollar una pequeña descripcion sobre el nombre del dt.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Lista</li>
+                        <li>ul</li>
+
+                    </ul>
+
+                    <ol>
+
+                        <li>Lista</li>
+                        <li>Ol</li>
+
+                    </ol>
+
+                </article>
+
+                <article id="article">
+
+                    <h3>Artículo</h3>
+                    <p>
+
+                        Esta es la primera parte. <br>
+                        La línea horizontal se escribe así: &lt;hr&gt;
+                        
+                    </p>
+
+                    <hr>
+
+                    <p>
+
+                        Esta es la segunda parte. 
+
+                    </p>
+
+                </article>
+
+            </section>
+
+            <section id="elementosSemanticos" class="elementosSemanticos">
+
+                <h2>Elementos semánticos de texto</h2>
+
+                <article id="resaltado">
+
+                    <h3>Resaltado</h3>
+                    <p>
+
+                        <ul>
+
+                            <li>&lt;i&gt;Cursiva&lt;i&gt; = <i>Itálica</i></li>
+                            <li>&lt;b&gt;Negrita&lt;b&gt; = <b>Negrita</b></li>
+                            <li>&lt;u&gt;Subrayado&lt;u&gt; = <u>Subrayado</u></li>
+                            <li>&lt;em&gt;Enfasis&lt;em&gt; = <em>Enfasis</em></li>
+                            <li>&lt;strong&gt;Strong&lt;strong&gt; = <strong>Strong</strong></li>
+                            <li>&lt;small&gt;Small&lt;small&gt; = <small>Small</small></li>
+                            <li>&lt;s&gt;S&lt;s&gt; = <s>palabra con s</s></li>
+
+                        </ul>
+
+                    </p>
+
+                </article>
+
+                <article id="saltoLinea">
+
+                    <h3>Salto de Línea</h3>
+                    <p>
+
+                        Un salto de línea se escribe con &lt;br&gt; <br>
+                        y así se queda. 
+
+                    </p>
+
+                </article>
+
+                <article id="hiperenlace">
+
+                    <h3>Hiperenlaces</h3>
+                    <p>
+
+                        Para usar un hiperenlace a una página externa hay que usar &lt;a href="url"&gt;Nombre&lt;/a&gt; <br>
+                        Para usar un hiperenlace a una parte del mismo documento HTML5 hay que usar &lt;a href="#id"&gt;Nombre&lt;/a&gt; <br>
+                        Para usar un hiperenlace a un archivo de la misma carpeta hay que usar &lt;a href="direccionarchivo"&gt;Nombre&lt;/a&gt; <br>
+                        Si se quiere abrir el link en una ventana nueva hay que usar &lt;a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank"&gt;Wikipedia&lt;/a&gt;
+
+                    </p>
+
+                </article>
+
+            </section>
+
+            <section id="simbolosEspeciales" class="simbolosEspeciales">
+
+                <h2>Simbolos especiales</h2>
+                <p>
+
+                    Los simbolos especiales se escriben con un "&" seguido del nombre del símbolo. <br>
+
+                </p>
+
+            </section>
+
+            <section id="tablas" class="tablas">
+
+                <h2>Tablas</h2>
+
+                <p>
+
+                    Las tablas se insertan asi: 
+                    <ul>
+
+                        <li>&lt;table&gt; para abrir la tabla y &lt;/table&gt; para cerrarla</li>
+                        <li>&lt;tr&gt;&lt;/tr&gt; para insertar una fila en la tabla</li>
+                        <li>&lt;td&gt;&lt;td&gt; para insertar una columna en la fila de la tabla</li>
+
+                    </ul>
+
+                </p>
+
+                <table>
+
+                    <tr>
+
+                        <td> </td> <td><b>1</b></td> <td><b>2</b></td> <td><b>3</b></td> <td><b>4</b></td> <td><b>5</b></td> 
+
+                    </tr>
+
+                    <tr>
+
+                        <td><b>1</b></td> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><b>2</b></td> <td>2</td> <td>4</td> <td>6</td> <td>8</td> <td>10</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><b>3</b></td> <td>3</td> <td>6</td> <td>9</td> <td>12</td> <td>15</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><b>4</b></td> <td>4</td> <td>8</td> <td>12</td> <td>16</td> <td>20</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><b>5</b></td> <td>5</td> <td>10</td> <td>15</td> <td>20</td> <td>25</td>
+
+                    </tr>
+
+                </table>
+
+            </section>
+
+        </body>
+    </html>
