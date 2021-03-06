@@ -6,11 +6,13 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Tutorial HTML5</title>
-            <link rel="stylesheet" type="text/css" href="EstiloHTML.css">
+            <link rel="stylesheet" type="text/css" href="EstiloMain.css">
 
         </head>
 
         <body>
+        
+        <section id="fondo">
             
             <h1>Tutorial de HTML5</h1>
     
@@ -20,34 +22,24 @@
 
                 <ol>
 
-                <a href="#formato" class="apartadosIndice">Formato</a>
-                <a href="#titulo" class="apartadosIndice">Titulo</a>
-                <a href="#metadatos" class="apartadosIndice">Metadatos</a>
-                <a href="#tituloTexto" class="apartadosIndice">Titulos de texto</a>
-                <a href="#seccionArticulo" class="apartadosIndice">Sección y artículo</a>
-                <a href="#documento" class="apartadosIndice">Cabecera y pie de página</a>
-                <a href="#agrupacion" class="apartadosIndice">Agrupaciones</a>
-                <a href="#elementosSemanticos" class="apartadosIndice">Elementos semánticos del texto</a>
-                <a href="#simbolosEspeciales" class="apartadosIndice">Símbolos especiales</a>
-                <a href="#tablas" class="apartadosIndice">Tablas</a>
+                <li><a href="#formato" id="apartadosIndice">Formato</a></li>
+                <li><a href="#titulo" id="apartadosIndice">Titulo</a></li>
+                <li><a href="#metadatos" id="apartadosIndice">Metadatos</a></li>
+                <li><a href="#tituloTexto" id="apartadosIndice">Titulos de texto</a></li>
+                <li><a href="#seccionArticulo" id="apartadosIndice">Sección y artículo</a></li>
+                <li><a href="#documento" id="apartadosIndice">Cabecera y pie de página</a></li>
+                <li><a href="#agrupacion" id="apartadosIndice">Agrupaciones</a></li>
+                <li><a href="#elementosSemanticos" id="apartadosIndice">Elementos semánticos del texto</a></li>
+                <li><a href="#simbolosEspeciales" id="apartadosIndice">Símbolos especiales</a></li>
+                <li><a href="#tablas" id="apartadosIndice">Tablas</a></li>
 
                 </ol>
-                
-            </section>
-
-            <section id="indiceExterno" class="indiceExterno">
-
-                
-
-            </section>
-
-            <section id="indiceMultimedia" class="indiceMultimedia">
 
                 <h2>Indice Multimedia</h2>
 
                 <ol>
 
-                    <a href="HTML/Multimedia.html" class="apartadosIndice">Apartado Multimedia</a>
+                    <li><a href="Multimedia.html" class="apartadosIndice" target="_blank" id="apartadosIndice">Apartado Multimedia</a></li>
 
                 </ol>
 
@@ -170,8 +162,9 @@
                 <p>
 
                     Los metadatos se escriben asi: <br>
-                    &lt;meta charset=“utf-8”&gt; <br>
-                    &lt;meta name=“author” content=“Iker”&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 
                 </p>
 
@@ -457,17 +450,18 @@
 
                         <li>&lt;table&gt; para abrir la tabla y &lt;/table&gt; para cerrarla</li>
                         <li>&lt;tr&gt;&lt;/tr&gt; para insertar una fila en la tabla</li>
-                        <li>&lt;td&gt;&lt;td&gt; para insertar una columna en la fila de la tabla</li>
+                        <li>&lt;td&gt;&lt;/td&gt; para insertar una columna en la fila de la tabla</li>
+                        <li>&lt;thead&gt;&lt;/thead&gt; para aplicar un encabezado de tabla</li>
 
                     </ul>
 
                 </p>
 
-                <table>
-
+                <table id="tabla" class="tabla" rules="all" width="500" height="500">
+                
                     <tr>
 
-                        <td> </td> <td><b>1</b></td> <td><b>2</b></td> <td><b>3</b></td> <td><b>4</b></td> <td><b>5</b></td> 
+                        <td width="100"> </td> <td width="100"><b>1</b></td> <td width="100"><b>2</b></td> <td width="100"><b>3</b></td> <td width="100"><b>4</b></td> <td width="100"><b>5</b></td> 
 
                     </tr>
 
@@ -504,6 +498,6 @@
                 </table>
 
             </section>
-
+        </section>    
         </body>
     </html>

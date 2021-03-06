@@ -1,0 +1,48 @@
+h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 350%;
+    vertical-align: center;
+    text-align: center;
+    margin-bottom: 0%;
+
+}
+
+h2 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: gray;
+
+
+}
+
+img {
+
+    height: 5%;
+    width: 5%;
+
+}
+
+
+
+a {
+    
+    border: 1px solid;
+    padding: 10px;
+    background-color: darkslategrey;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+
+}
+
+p {
+
+    text-align: center;
+    margin-top: 250px;
+
+}
+
